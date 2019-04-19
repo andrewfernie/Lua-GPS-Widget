@@ -1,0 +1,20 @@
+WIMAC local maps
+
+-- coordinates for the smallest map. 
+local mapsmallNorth = 45.456021
+local mapsmallSouth = 45.454496
+local mapsmallWest  = -73.917621
+local mapsmallEast = -73.913765
+
+
+-- coordinates for the medium map.
+local mapmediumNorth = 45.457300
+local mapmediumSouth = 45.453076
+local mapmediumWest = -73.921548
+local mapmediumEast  = -73.910849
+
+--coordinates for the largest map. 
+local maplargeNorth = 45.458425
+local maplargeSouth = 45.449962
+local maplargeWest  = -73.927674
+local maplargeEast = -73.906408
