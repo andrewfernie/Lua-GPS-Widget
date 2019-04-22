@@ -75,25 +75,25 @@ function refresh(myZone)
 
     -- coordinates for the smallest map. These can be found by placing the image back into Google Earth and looking at the overlay
     -- parameters
-    local mapsmallNorth = 52.559801
-    local mapsmallSouth = 52.554921
-    local mapsmallWest = 5.867646
-    local mapsmallEast = 5.879677
+
+    -- coordinates for the smallest map. 
+    local mapsmallNorth = 45.456021
+    local mapsmallSouth = 45.454496
+    local mapsmallWest  = -73.917621
+    local mapsmallEast = -73.913765
 
 
     -- coordinates for the medium map.
-    local mapmediumNorth = 52.561551
-    local mapmediumSouth = 52.554211
-    local mapmediumWest = 5.864698
-    local mapmediumEast = 5.882574
+    local mapmediumNorth = 45.457300
+    local mapmediumSouth = 45.453076
+    local mapmediumWest = -73.921548
+    local mapmediumEast  = -73.910849
 
     --coordinates for the largest map. 
-    local maplargeNorth = 52.564116
-    local maplargeSouth = 52.553043
-    local maplargeWest = 5.859864
-    local maplargeEast = 5.887011
-
-
+    local maplargeNorth = 45.458425
+    local maplargeSouth = 45.449962
+    local maplargeWest  = -73.927674
+    local maplargeEast = -73.906408
 
     if      gpsLat < mapsmallNorth and gpsLat > mapsmallSouth and gpsLong < mapsmallEast and gpsLong > mapsmallWest
       then    mapNorth = mapsmallNorth
