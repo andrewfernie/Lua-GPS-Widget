@@ -36,30 +36,30 @@ local function create(zone, options)
   local map = {North={},South={},West={},East={},wx={},wy={},zx={},zy={}}
 		
   -- coordinates for the small map.
-  map.North.small = 52.559801
-  map.South.small = 52.554921
-  map.West.small = 5.867646
-  map.East.small = 5.879677
+  map.North.small = 45.456021
+  map.South.small = 45.454496
+  map.West.small  = -73.917621
+  map.East.small = -73.913765
   map.wx.small = 320
   map.wy.small = 0
   map.zx.small = 479
   map.zy.small = 210
 
   -- coordinates for the medium map.
-  map.North.medium = 52.561551
-  map.South.medium = 52.554211
-  map.West.medium = 5.864698
-  map.East.medium = 5.882574
+  map.North.medium = 45.457300
+  map.South.medium = 45.453076
+  map.West.medium = -73.921548
+  map.East.medium  = -73.910849
   map.wx.medium = 246
   map.wy.medium = 0
   map.zx.medium = 443
   map.zy.medium = 271
 
   --coordinates for the largest map. 
-  map.North.large = 52.564116
-  map.South.large = 52.553043
-  map.West.large = 5.859864
-  map.East.large = 5.887011
+  map.North.large = 45.458425
+  map.South.large = 45.449962
+  map.West.large  = -73.927674
+  map.East.large = -73.906408
   map.wx.large = 197
   map.wy.large = 0
   map.zx.large = 410
@@ -67,9 +67,9 @@ local function create(zone, options)
 		
   --add one bitmap per map size and set current map size
   map.bmp={}
-  map.bmp.small = Bitmap.open("/Widgets/Image1/map.png")
-  map.bmp.medium = Bitmap.open("/Widgets/Image1/map1.png")
-  map.bmp.large = Bitmap.open("/Widgets/Image1/map2.png")
+  map.bmp.small = Bitmap.open("/Widgets/GPSMap/WIMAC/map.png")
+  map.bmp.medium = Bitmap.open("/Widgets/GPSMap/WIMAC/map1.png")
+  map.bmp.large = Bitmap.open("/Widgets/GPSMap/WIMAC/map2.png")
   
   --set current size
   map.current = "large"
@@ -213,8 +213,8 @@ local function refresh(thisWidget)
   lcd.drawLine(xvalues.ex, yvalues.ey, xvalues.fx, yvalues.fy, SOLID, CUSTOM_COLOR)
 
 --draw noflightzone
-  lcd.setColor(CUSTOM_COLOR, lcd.RGB(255,0,0))
-  lcd.drawLine(thisWidget.map.wx[thisWidget.map.current], thisWidget.map.wy[thisWidget.map.current], thisWidget.map.zx[thisWidget.map.current], thisWidget.map.zy[thisWidget.map.current], SOLID, CUSTOM_COLOR)
+--  lcd.setColor(CUSTOM_COLOR, lcd.RGB(255,0,0))
+--  lcd.drawLine(thisWidget.map.wx[thisWidget.map.current], thisWidget.map.wy[thisWidget.map.current], thisWidget.map.zx[thisWidget.map.current], thisWidget.map.zy[thisWidget.map.current], SOLID, CUSTOM_COLOR)
 
 end
 return { name="Map", options=options, create=create, update=update, background=background, refresh=refresh }

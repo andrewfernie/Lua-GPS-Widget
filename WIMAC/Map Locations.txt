@@ -1,0 +1,32 @@
+-- WIMAC map coordinates
+-- The wx,wy and zx,zy co-ordinates are for the no-fly zone and are not valid.
+
+-- coordinates for the small map.
+  map.North.small = 45.456021
+  map.South.small = 45.454496
+  map.West.small  = -73.917621
+  map.East.small = -73.913765
+  map.wx.small = 320
+  map.wy.small = 0
+  map.zx.small = 479
+  map.zy.small = 210
+
+  -- coordinates for the medium map.
+  map.North.medium = 45.457300
+  map.South.medium = 45.453076
+  map.West.medium = -73.921548
+  map.East.medium  = -73.910849
+  map.wx.medium = 246
+  map.wy.medium = 0
+  map.zx.medium = 443
+  map.zy.medium = 271
+
+  --coordinates for the largest map. 
+  map.North.large = 45.458425
+  map.South.large = 45.449962
+  map.West.large  = -73.927674
+  map.East.large = -73.906408
+  map.wx.large = 197
+  map.wy.large = 0
+  map.zx.large = 410
+  map.zy.large = 271
